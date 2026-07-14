@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import RolesPage from "./pages/RolesPage";
 import RoleDetailPage from "./pages/RoleDetailPage";
 import MetricsPage from "./pages/MetricsPage";
+import MetricDetailPage from "./pages/MetricDetailPage";
 import BlogIndex from "./pages/BlogIndex";
 import BlogPost from "./pages/BlogPost";
 import StaticPage from "./pages/StaticPage";
@@ -261,6 +262,7 @@ export default function App() {
         <Route path="/roles" element={<RolesPage />} />
         <Route path="/roles/:slug" element={<RoleDetailPage />} />
         <Route path="/metrics" element={<MetricsPage />} />
+        <Route path="/metrics/:slug" element={<MetricDetailPage />} />
         <Route path="/blog" element={<BlogIndex />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/about" element={<StaticPage page="about" />} />

@@ -213,7 +213,7 @@ The psychology of friend group dynamics is not romantic. It is mechanical. The g
     date: "2026-07-10",
     category: "advice",
     tags: ["toxic", "boundaries", "advice", "friend group"],
-    content: `Most articles about toxic friend groups are written as if toxicity is obvious. The friends are mean to you, they exclude you, they talk behind your back, you should leave. That is not the hard case. The hard case is the friend group that is mostly good, that has years of history, that has moments of genuine warmth, and that is also, in a way you cannot quite articulate, slowly making you smaller. That is the group that is hard to leave, and it is also the group where leaving matters most.
+      content: `Most articles about toxic friend groups are written as if toxicity is obvious. The friends are mean to you, they exclude you, they talk behind your back, you should leave. That is not the hard case. The hard case is the friend group that is mostly good, that has years of history, that has moments of genuine warmth, and that is also, in a way you cannot quite articulate, slowly making you smaller. That is the group that is hard to leave, and it is also the group where leaving matters most.
 
 This article is not about the obviously abusive friend group. It is about the subtly corrosive one. The one where you cannot point to a single unforgivable event but where, after every hangout, you feel slightly worse about yourself than you did before. Here is how to diagnose it, and here is how to leave it if you need to.
 
@@ -256,5 +256,144 @@ If three or more of the above signs apply, the kindest thing you can do, for the
 If the group does notice and asks, tell the truth. Not the whole truth. Just enough. "I am pulling back for a while. It is not personal, I just need a different pace right now." If the group can receive that without punishing you for it, the group was less toxic than you thought, and you have not burned a bridge. If the group punishes you for the honesty, you have confirmation that you made the right call.
 
 Walking away from a friend group is not a failure. It is a correction. The groups we inherit from school, work, and proximity are not the groups we are obligated to die in. We are allowed to outgrow them. We are allowed to choose groups that want us to be bigger, not smaller. The kindest thing a person can do with a corrosive group is to stop feeding it, and the kindest thing a corrosive group can do for its members is to let them go.`,
+  },
+  {
+    slug: "friend-group-size-ideal",
+    title: "What's the Ideal Friend Group Size? Science Says 4-8",
+    excerpt:
+      "Too small and the group is fragile. Too large and it fragments into sub-cliques. The research on friendship networks points to a surprisingly narrow sweet spot for a healthy squad.",
+    author: "Marcus Chen",
+    date: "2026-07-12",
+    category: "science",
+    tags: ["friend group size", "dunbar", "research", "dynamics"],
+    content: `Ask anyone how many people should be in a friend group and you will get a different answer every time. Three, five, eight, twelve. The truth is that most people are guessing based on their own group, and their own group is the product of accident rather than design. The research on friendship networks, however, is surprisingly consistent. It points to a narrow sweet spot — between four and eight people — and it explains why groups below and above that range fail in predictable ways.
+
+## The Dunbar Rings
+
+The most famous figure in friendship research is Robin Dunbar's number: 150. That is the cognitive ceiling on how many stable social relationships a single human can maintain, and it is driven by neocortex size in primates. But Dunbar himself broke the number down into concentric rings, and the rings are where the squad-level insight lives. The innermost ring — the people you would call in a crisis — is about five. The next ring — the intimacy circle — is about fifteen. Then fifty, then one hundred fifty.
+
+The implication for squad design is direct. A friend group of three to eight people sits squarely inside the innermost ring, which means every member can maintain a full relationship with every other member without cognitive overload. Above eight, you start to exceed the innermost ring's capacity, and the group begins to fragment into sub-cliques because no single member can hold all the relationships at full intensity.
+
+## Why Three Is Too Few
+
+A group of three is structurally fragile. It is the minimum viable squad, but it has no redundancy. If one member moves, gets busy, or drifts, the group becomes a pair, and a pair is not a squad — it is a friendship. A group of three also has a recurring dynamic problem: two of the three are almost always closer than the third, and the third is perpetually in the position of asking to be included. The triad works only if all three relationships are independently strong, which is rare.
+
+A group of four is the first structurally stable size. It has redundancy — one member can leave and the group still functions. It has enough role coverage that the eight squad roles can be distributed. And it is small enough that every member can maintain a direct relationship with every other member without the group splintering.
+
+## Why Nine Is Too Many
+
+The problems start above eight. Scheduling becomes a real logistical burden — finding a night when nine people are free is exponentially harder than finding a night when five are free. Sub-cliques form, usually along the lines of who is closest to whom, and the group quietly becomes two squads pretending to be one. The group chat splits into sub-conversations. Cohesion drops because no single member can hold the full group identity in their head.
+
+This is not a moral failing of the group. It is a structural consequence of network size. The research on group dynamics, from Dunbar to contemporary organizational psychology, consistently finds that above eight people, the group requires formal structure — a leader, a scheduler, explicit norms — to stay cohesive. Friend groups do not have formal structure, which is why they fragment instead.
+
+## The Sweet Spot: Four to Eight
+
+The research points to four to eight as the structurally optimal range. Within that range, every member can maintain a direct relationship with every other member. The group has enough redundancy to survive a member leaving. Role coverage is achievable. Scheduling is hard but not impossible. And cohesion is sustainable because the group is small enough to feel like a unit rather than a network.
+
+Within that range, the ideal size depends on the group's life stage. Younger squads with more free time can sustain seven or eight. Older squads with jobs, partners, and kids are better at four or five, because the scheduling burden per member is lower. The audit question is not "how many people are in your group" but "is your group small enough that every member has a direct relationship with every other member, and large enough that one departure does not dissolve it."
+
+## When Your Group Is the Wrong Size
+
+If your group is below four, the fix is not to recruit strangers. It is to deepen the existing relationships and accept that the group is a close friendship rather than a squad, which is fine. If your group is above eight, the fix is not to expel members. It is to honestly acknowledge that you are running two squads and let them develop their own identities, rituals, and scheduling. Pretending a ten-person group is one group is the source of most of the scheduling pain and cohesion drift in large friend groups.
+
+The ideal friend group size is not a matter of preference. It is a matter of cognitive capacity, role coverage, and structural redundancy. Get the size right and the other four metrics become easier. Get it wrong and you are fighting the math, which is a fight you will eventually lose.`,
+  },
+  {
+    slug: "friendship-maintenance-checklist",
+    title: "The Friendship Maintenance Checklist: 12 Things to Do Monthly",
+    excerpt:
+      "Friendships do not die from conflict. They die from neglect. Here is a monthly checklist of twelve small maintenance tasks that keep a squad alive across decades of life change.",
+    author: "Marcus Chen",
+    date: "2026-07-13",
+    category: "guide",
+    tags: ["maintenance", "checklist", "friend group", "rituals"],
+    content: `Friendships do not usually die from conflict. They die from neglect. The drift pattern in failing friend groups is remarkably consistent: no single rupture, just a gradual reduction in contact until one day the group chat has been silent for three months and no one can name the day the squad stopped being a squad. The antidote is not heroic effort. It is small, recurring maintenance — the friendship equivalent of changing the oil. Here is a monthly checklist of twelve tasks that keep a squad alive across decades of life change.
+
+## The Twelve Monthly Tasks
+
+**1. Initiate one hangout that is not a birthday, holiday, or event.** Most squads only gather on occasions, which means the squad only meets when the calendar provides an excuse. A healthy squad generates its own reasons to meet. Initiate one no-reason hangout per month.
+
+**2. Send one member a one-on-one message that is not logistics.** Group chats are efficient but shallow. Once a month, pick one member and send them a message that is genuinely about them — a memory, a question, a check-in. Rotate who you pick.
+
+**3. Update the shared calendar with the next two standing rituals.** If your squad does not have a standing ritual, this is the month to create one. If it does, make sure the next two instances are on every member's calendar before the current month ends.
+
+**4. Check in on the member you have heard from least.** Every squad has a Ghost — the member who reads everything and responds to nothing. Once a month, reach out to whoever has been quietest. Not to drag them back in, just to confirm the channel is open.
+
+**5. Introduce one piece of new shared context.** Inside jokes are the connective tissue of a squad, but they go stale. Once a month, generate one new shared experience — a meme only the group would understand, a story from a hangout, a recurring bit. New context is what keeps the group's identity alive.
+
+**6. Review the role coverage.** Which of the eight squad roles is currently uncovered? Which is being carried by an over-leveraged member? Once a month, take thirty seconds to notice. You do not have to fix it every month, but you have to notice it.
+
+**7. Name one thing the group is doing well.** Squads rarely get positive feedback. Once a month, tell the group — in the chat or in person — one thing they are doing right. "I really needed that dinner last week" is enough. Morale is a maintenance task.
+
+**8. Have one conversation that is not about logistics.** Most squad conversations degrade into scheduling. Once a month, steer a conversation toward something real — a member's actual life, a question with no practical purpose, a debate about nothing. Logistics keep the group moving. Non-logistics keep the group connected.
+
+**9. Confirm the next standing ritual actually happened.** Rituals die the first time they are skipped without acknowledgment. If last month's standing dinner did not happen, name it. Reschedule it. Do not let it quietly disappear.
+
+**10. Audit your own maintenance contribution.** Are you the one always initiating, or never initiating? Are you carrying three roles or zero? Once a month, honestly assess whether you are over-contributing (heading toward burnout) or under-contributing (heading toward drift).
+
+**11. Reach out to one member who has drifted.** If a member has been less present, reach out directly. Not to confront them — to ask if they are okay. Drift is often a response to something the group cannot see, and a direct check-in is often all it takes to reverse it.
+
+**12. Plan one thing to look forward to next month.** A squad without a forward horizon is a squad in slow decline. At the end of each month, make sure there is at least one thing on the calendar that the group is genuinely excited about. Anticipation is a bonding mechanism.
+
+## Why Monthly
+
+The monthly cadence is not arbitrary. Research on habit formation and relationship maintenance consistently finds that monthly is the minimum frequency at which a practice stays salient without becoming a burden. Weekly is too frequent for most adults and becomes a chore. Quarterly is too infrequent and the practice fades. Monthly is the sweet spot.
+
+The checklist takes roughly thirty minutes per month if you do all twelve tasks. That is less time than most people spend deciding what to watch on a streaming service. The return on that thirty minutes is the difference between a squad that lasts twenty years and a squad that quietly ends in year three.
+
+## How to Start
+
+Do not try to do all twelve in the first month. Pick three. Do them for a month. Add three more the next month. Within four months you will have built the full checklist into a habit, and the squad will feel different — more intentional, more connected, more durable. Maintenance is not glamorous. It is the unglamorous thing that makes everything else possible.`,
+  },
+  {
+    slug: "when-friends-leave-your-group",
+    title: "When Friends Leave Your Group: How to Handle the Transition",
+    excerpt:
+      "Every squad loses members. The question is not whether it will happen but how the group handles it when it does. The way you process a departure determines whether the group survives it.",
+    author: "Marcus Chen",
+    date: "2026-07-14",
+    category: "advice",
+    tags: ["departure", "transition", "friend group", "advice"],
+    content: `Every squad loses members. Sometimes it is a move, sometimes a new partner, sometimes a slow drift, sometimes a sudden exit. The question is not whether it will happen but how the group handles it when it does. The way a squad processes a departure determines whether the group survives it, and most squads handle departures badly — either by pretending nothing happened or by treating the departure as a betrayal. Both reactions damage the group. Here is how to handle the transition well.
+
+## First: Do Not Pretend It Did Not Happen
+
+The most common mistake squads make when a member leaves is silence. The member announces they are pulling back, the group chat goes quiet for a day, and then everyone carries on as if nothing changed. This is the worst possible response. The silence signals to the remaining members that departures are not discussed, which means the remaining members will not raise their own doubts when they have them. It also leaves the departing member feeling erased, which converts a graceful exit into a resentful one.
+
+Name the departure. In the group chat or at the next hangout, acknowledge it directly. "Sam is pulling back for a while. We are going to miss them. Here is what that means for the group." You do not need a speech. You need a sentence that signals the group can talk about change.
+
+## Second: Do Not Treat It as a Betrayal
+
+The second most common mistake is the opposite reaction: treating the departure as a betrayal. This happens most often when a member leaves for a new partner, a new job, or a new friend group. The remaining members feel abandoned and express it, either directly or through passive withdrawal. This reaction is understandable but destructive. It tells every other member that leaving is punished, which traps people in the group who would rather go, and trapped members are the most corrosive members a squad can have.
+
+A member choosing to leave is not a verdict on the group. It is a statement about their life at this moment. The kindest response is to make the exit easy, not hard. Members who leave easily come back. Members who leave badly do not.
+
+## Third: Diagnose the Real Reason
+
+After the departure is acknowledged and not punished, the group should quietly diagnose the real reason. There are three categories.
+
+The first is circumstantial — a move, a job change, a new baby. These departures are not about the group. They are about capacity. The fix is usually a reduced-cadence version of the standing ritual: a monthly call instead of a weekly dinner, a yearly visit instead of a monthly hangout. Circumstantial departures are reversible if the group stays in light contact.
+
+The second is relational — a conflict with another member, a feeling of not fitting in, a slow sense of being excluded. These departures are about the group, and they are diagnostic. If a member leaves for relational reasons, the group should honestly ask whether the pattern that drove them out affects other members too. Often it does, and the departure is the first visible symptom of a structural problem.
+
+The third is identity — the member has outgrown the group. Their values, interests, or trajectory have diverged, and the squad no longer fits who they are becoming. These departures are the hardest to prevent and the easiest to handle well. The group should let them go with warmth, because a member who has outgrown the group but stays is a member who is slowly resenting the group.
+
+## Fourth: Redistribute the Roles
+
+The most practical step after a departure is role redistribution. Every member in a squad carries at least one of the eight core roles, and when a member leaves, their roles go uncovered. The most common failure pattern is that the remaining members do not notice the gap until weeks later, when the group starts malfunctioning — no one is planning, no one is checking in, no one is generating fun.
+
+Within a week of the departure, the group should identify which roles the departing member carried and explicitly redistribute them. "Sam was our Planner. Who is going to take over the calendar?" The redistribution does not have to be permanent, but it has to be explicit. Unnamed role gaps become silent drift.
+
+## Fifth: Do Not Rush to Replace
+
+The temptation after a departure is to recruit a new member to fill the gap. Resist it. A new member introduced too quickly after a departure destabilizes the group further. The remaining members have not yet adjusted to the new group size and dynamic, and adding a stranger to a group that is still processing a loss creates a brittle configuration.
+
+Wait at least three months before considering a new member. Use the time to let the remaining group settle into its new shape. Often, the group will discover that it functions fine at the smaller size and does not need a new member at all. If it does, the new member should be introduced gradually — group hangouts first, individual relationships second, full integration over months.
+
+## Sixth: Keep the Door Open
+
+The departure is not necessarily permanent. Many members who leave for circumstantial reasons come back when circumstances change. The group should explicitly keep the door open: a standing invitation to the yearly ritual, an occasional check-in message, a genuine "you are always welcome." The members who come back are often the most loyal members the group will ever have, because they chose to return.
+
+The squads that survive decades are not the ones that never lose members. They are the ones that handle departures with enough grace that the departing member remains a friend of the group, even if they are no longer in it. Every squad is a temporary configuration. Handling that temporariness well is the core skill of long-term squad maintenance.`,
   },
 ];

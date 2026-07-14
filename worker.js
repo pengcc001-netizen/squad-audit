@@ -3,6 +3,7 @@ const STATIC_PAGES = new Set(['/', '/roles', '/metrics', '/blog', '/about', '/pr
 function isValidRoute(pathname) {
   if (STATIC_PAGES.has(pathname)) return true;
   if (/^\/roles\/[a-z0-9-]+$/.test(pathname)) return true;
+  if (/^\/metrics\/[a-z0-9-]+$/.test(pathname)) return true;
   if (/^\/blog\/[a-z0-9-]+$/.test(pathname)) return true;
   if (/^\/r\/[A-Za-z0-9_-]+$/.test(pathname)) return true;
   return false;

@@ -11,6 +11,10 @@ const today = new Date().toISOString().split('T')[0]
 const rolesData = fs.readFileSync(resolve(root, 'src', 'data', 'squadRoles.ts'), 'utf8')
 const roleSlugs = [...rolesData.matchAll(/slug: "([a-z0-9-]+)"/g)].map(m => m[1])
 
+// Read metrics
+const metricsData = fs.readFileSync(resolve(root, 'src', 'data', 'metrics.ts'), 'utf8')
+const metricSlugs = [...metricsData.matchAll(/slug: "([a-z0-9-]+)"/g)].map(m => m[1])
+
 // Read blog
 const blogData = fs.readFileSync(resolve(root, 'src', 'data', 'blog.ts'), 'utf8')
 const blogSlugs = [...new Set([...blogData.matchAll(/slug: "([a-z0-9-]+)"/g)].map(m => m[1]))]
@@ -30,10 +34,11 @@ add('/contact', 0.5)
 
 // Dynamic pages
 for (const slug of roleSlugs) add(`/roles/${slug}`, 0.8)
+for (const slug of metricSlugs) add(`/metrics/${slug}`, 0.7)
 for (const slug of blogSlugs) add(`/blog/${slug}`, 0.7)
 
 xml += '</urlset>\n'
 
 fs.writeFileSync(resolve(root, 'public', 'sitemap.xml'), xml, 'utf8')
 try { fs.writeFileSync(resolve(root, 'dist', 'sitemap.xml'), xml, 'utf8') } catch {}
-console.log(`Sitemap: ${8 + roleSlugs.length + blogSlugs.length} URLs (${roleSlugs.length} roles, ${blogSlugs.length} blog)`)
+console.log(`Sitemap: ${8 + roleSlugs.length + metricSlugs.length + blogSlugs.length} URLs (${roleSlugs.length} roles, ${metricSlugs.length} metrics, ${blogSlugs.length} blog)`)
