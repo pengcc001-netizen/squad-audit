@@ -1,0 +1,127 @@
+/* ============================================================
+   SQUAD AUDIT — Corporate Audit Report / Data Dashboard
+   Clean light, navy + teal, data-driven, professional.
+   Space Grotesk for headings, Inter for body, IBM Plex Mono for data.
+   ============================================================ */
+
+:root {
+  --bg: #F8FAFC;
+  --bg-elevated: #FFFFFF;
+  --bg-card: #FFFFFF;
+  --bg-hover: #F1F5F9;
+  --bg-glass: rgba(255, 255, 255, 0.9);
+
+  --border: #E2E8F0;
+  --border-hover: #CBD5E1;
+  --border-strong: #94A3B8;
+
+  --text: #0F172A;
+  --text-soft: #64748B;
+  --text-faint: #94A3B8;
+
+  --primary: #1E40AF;
+  --primary-light: #3B82F6;
+  --primary-soft: rgba(30, 64, 175, 0.08);
+  --secondary: #0D9488;
+  --secondary-light: #14B8A6;
+  --secondary-soft: rgba(13, 148, 136, 0.08);
+
+  --success: #16A34A;
+  --warning: #EAB308;
+  --danger: #DC2626;
+
+  --font-heading: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', 'Courier New', monospace;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-lg: 16px;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a { color: var(--primary); text-decoration: none; transition: color 0.15s ease; }
+a:hover { color: var(--primary-light); }
+
+h1, h2, h3, h4 { font-family: var(--font-heading); color: var(--text); font-weight: 700; letter-spacing: -0.02em; line-height: 1.2; }
+
+::selection { background: var(--primary); color: white; }
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent;
+}
+
+.eyebrow { font-family: var(--font-mono); font-size: 0.7rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--primary); }
+.section-label { font-family: var(--font-mono); font-size: 0.7rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--text-soft); }
+
+.audit-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+.audit-card:hover { box-shadow: var(--shadow); border-color: var(--border-hover); transform: translateY(-1px); }
+
+.card { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: var(--shadow-sm); }
+
+.chip { display: inline-block; padding: 4px 12px; border: 1px solid var(--border-strong); border-radius: 999px; font-size: 0.6875rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; background: var(--bg-card); color: var(--text-soft); font-family: var(--font-mono); line-height: 1.5; }
+.chip-primary { border-color: var(--primary); color: var(--primary); background: var(--primary-soft); }
+.chip-secondary { border-color: var(--secondary); color: var(--secondary); background: var(--secondary-soft); }
+.chip-success { border-color: var(--success); color: var(--success); background: rgba(22, 163, 74, 0.08); }
+.chip-warning { border-color: var(--warning); color: var(--warning); background: rgba(234, 179, 8, 0.08); }
+.chip-danger { border-color: var(--danger); color: var(--danger); background: rgba(220, 38, 38, 0.08); }
+
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 12px 28px; border-radius: var(--radius-sm); font-family: var(--font-body); font-weight: 600; font-size: 0.8125rem; letter-spacing: 0.04em; text-transform: uppercase; cursor: pointer; border: none; text-decoration: none; transition: all 0.2s ease; }
+.btn-primary { background: var(--primary); color: white; box-shadow: var(--shadow-sm); }
+.btn-primary:hover { background: var(--primary-light); color: white; box-shadow: var(--shadow); transform: translateY(-1px); }
+.btn-outline { background: transparent; color: var(--primary); border: 1px solid var(--border-strong); }
+.btn-outline:hover { border-color: var(--primary); background: var(--primary-soft); color: var(--primary); }
+.btn-ghost { background: var(--bg-hover); color: var(--text); border: 1px solid var(--border); }
+.btn-ghost:hover { border-color: var(--border-hover); color: var(--primary); }
+
+.nav-link { position: relative; display: inline-block; padding-bottom: 2px; }
+.nav-link::after { content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 2px; background: var(--primary); border-radius: 1px; transition: width 0.2s ease; }
+.nav-link:hover::after { width: 100%; }
+
+.metric-bar { height: 8px; background: var(--border); border-radius: 4px; overflow: hidden; }
+.metric-bar-fill { height: 100%; border-radius: 4px; transition: width 0.5s ease; }
+
+.prose p { margin-bottom: 1.1em; }
+.prose h2 { font-size: 1.625rem; margin: 1.8em 0 0.6em; font-weight: 700; color: var(--text); }
+.prose h3 { font-size: 1.25rem; margin: 1.6em 0 0.5em; font-weight: 600; color: var(--text); }
+.prose a { text-decoration: underline; text-underline-offset: 3px; color: var(--primary); }
+
+.dropcap::first-letter { font-family: var(--font-heading); font-size: 3.4em; font-weight: 900; float: left; line-height: 0.82; margin: 0.05em 0.12em 0 0; color: var(--primary); }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes slideDown { from { opacity: 0; transform: translateY(-10px); } to { opacity: 1; transform: translateY(0); } }
+
+.fade-in { animation: fadeIn 0.4s ease; }
+.slide-up { animation: slideUp 0.4s ease; }
+.slide-down { animation: slideDown 0.3s ease; }
+
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 5px; border: 2px solid var(--bg); }
+::-webkit-scrollbar-thumb:hover { background: var(--text-faint); }
+
+@media (max-width: 640px) { body { font-size: 15px; } }
