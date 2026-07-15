@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import { useParams, Link, Navigate } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import { squadRoles } from "../data/squadRoles";
 import ShareButtons from "../components/ShareButtons";
 import Ad from "../components/Ad";
@@ -23,7 +23,7 @@ const METRIC_COLORS: Record<string, string> = {
 export default function RoleDetailPage() {
   const { slug } = useParams<{ slug: string }>();
   const role = squadRoles.find((r) => r.slug === slug);
-  if (!role) return <Navigate to="/roles" replace />;
+  if (!role) return <div style={{ minHeight: '60vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 16 }}><Helmet><meta name="robots" content="noindex,nofollow" /></Helmet><h1 style={{ fontSize: 48, fontWeight: 800 }}>404</h1><p>Page not found</p><Link to="/" style={{ textDecoration: 'none', fontWeight: 600 }}>Go Home</Link></div>;
 
   const url = `https://squad.csskey.com/roles/${role.slug}`;
   const compatible = squadRoles.filter((r) => role.compatibility.includes(r.slug));
