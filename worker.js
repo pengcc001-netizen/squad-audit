@@ -13,6 +13,7 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     const path = url.pathname.replace(/\/+$/, '') || '/';
+    if (path !== url.pathname) return Response.redirect(url.origin + path, 301);
     let response = await env.ASSETS.fetch(request);
     if (response.status === 404) {
       const indexRequest = new Request(new URL('/index.html', url.origin), { method: request.method, headers: request.headers });
