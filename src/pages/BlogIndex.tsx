@@ -9,6 +9,19 @@ export default function BlogIndex() {
       <Helmet>
         <title>Squad Dynamics Blog - Friend Group Guides | Squad Audit</title>
         <meta name="description" content={`Learn about friend group dynamics, squad roles, and group health. ${blogPosts.length} articles.`} />
+        <link rel="canonical" href="https://squad.csskey.com/blog" />
+        <meta property="og:title" content="Squad Dynamics Blog - Friend Group Guides | Squad Audit" />
+        <meta property="og:description" content={`Learn about friend group dynamics, squad roles, and group health. ${blogPosts.length} articles.`} />
+        <meta property="og:url" content="https://squad.csskey.com/blog" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Squad Dynamics Blog - Friend Group Guides",
+          "description": `Learn about friend group dynamics, squad roles, and group health. ${blogPosts.length} articles.`,
+          "url": "https://squad.csskey.com/blog"
+        })}</script>
       </Helmet>
       <h2 className="eyebrow" style={{ marginBottom: 8 }}>Blog</h2>
       <h1 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 4vw, 2.75rem)", fontWeight: 700, marginBottom: 16 }}>Squad Dynamics</h1>

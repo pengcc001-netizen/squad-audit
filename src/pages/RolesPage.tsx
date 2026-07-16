@@ -9,6 +9,19 @@ export default function RolesPage() {
       <Helmet>
         <title>All Squad Roles - {squadRoles.length} Friend Group Roles | Squad Audit</title>
         <meta name="description" content={`Browse all ${squadRoles.length} squad roles — from The Planner to The Anchor. Each with responsibilities, strengths, weaknesses, and health metrics.`} />
+        <link rel="canonical" href="https://squad.csskey.com/roles" />
+        <meta property="og:title" content={`All Squad Roles - ${squadRoles.length} Friend Group Roles | Squad Audit`} />
+        <meta property="og:description" content={`Browse all ${squadRoles.length} squad roles — from The Planner to The Anchor. Each with responsibilities, strengths, weaknesses, and health metrics.`} />
+        <meta property="og:url" content="https://squad.csskey.com/roles" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": `All Squad Roles - ${squadRoles.length} Friend Group Roles`,
+          "description": `Browse all ${squadRoles.length} squad roles — from The Planner to The Anchor. Each with responsibilities, strengths, weaknesses, and health metrics.`,
+          "url": "https://squad.csskey.com/roles"
+        })}</script>
       </Helmet>
       <h2 className="eyebrow" style={{ marginBottom: 8 }}>Squad Roles</h2>
       <h1 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 4vw, 2.75rem)", fontWeight: 700, marginBottom: 16 }}>All Squad Roles</h1>

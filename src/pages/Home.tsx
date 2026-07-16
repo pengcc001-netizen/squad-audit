@@ -57,6 +57,12 @@ export default function Home() {
         <Helmet>
           <title>Squad Audit - Analyze Your Friend Group Dynamics [2026]</title>
           <meta name="description" content="Audit your squad. Take the quiz and get a detailed squad audit report with roles, health metrics, and group dynamics analysis. Free, no sign-up." />
+          <link rel="canonical" href="https://squad.csskey.com/" />
+          <meta property="og:title" content="Squad Audit - How Healthy Is Your Friend Group?" />
+          <meta property="og:description" content="Audit your friend group. 8 squad roles, 5 health metrics, 12 questions." />
+          <meta property="og:url" content="https://squad.csskey.com/" />
+          <meta property="og:type" content="website" />
+          <meta name="twitter:card" content="summary" />
           <script type="application/ld+json">
             {JSON.stringify({
               "@context": "https://schema.org",

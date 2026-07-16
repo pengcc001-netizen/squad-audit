@@ -9,6 +9,19 @@ export default function MetricsPage() {
       <Helmet>
         <title>Squad Health Metrics - 5 Indicators of Group Health | Squad Audit</title>
         <meta name="description" content="The 5 squad health metrics: Reliability, Fun Factor, Drama Level, Loyalty, and Cohesion. Learn what each metric measures and how to improve it." />
+        <link rel="canonical" href="https://squad.csskey.com/metrics" />
+        <meta property="og:title" content="Squad Health Metrics - 5 Indicators of Group Health | Squad Audit" />
+        <meta property="og:description" content="The 5 squad health metrics: Reliability, Fun Factor, Drama Level, Loyalty, and Cohesion. Learn what each metric measures and how to improve it." />
+        <meta property="og:url" content="https://squad.csskey.com/metrics" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Squad Health Metrics - 5 Indicators of Group Health",
+          "description": "The 5 squad health metrics: Reliability, Fun Factor, Drama Level, Loyalty, and Cohesion. Learn what each metric measures and how to improve it.",
+          "url": "https://squad.csskey.com/metrics"
+        })}</script>
       </Helmet>
       <h2 className="eyebrow" style={{ marginBottom: 8 }}>Health Metrics</h2>
       <h1 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 4vw, 2.75rem)", fontWeight: 700, marginBottom: 16 }}>Squad Health Metrics</h1>
