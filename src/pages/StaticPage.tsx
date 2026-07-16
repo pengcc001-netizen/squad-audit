@@ -110,8 +110,7 @@ export default function StaticPage({ page }: { page: string }) {
 
   let isFirstParagraph = true;
 
-  const canonicalPath = page === 'terms' ? 'legal-terms' : page;
-  const canonicalUrl = `https://squad.csskey.com/${canonicalPath}`;
+  const canonicalUrl = `https://squad.csskey.com/${page}`;
   const pageTitle = `${info.title} - Squad Audit`;
   const pageDescription = `Squad Audit ${info.title.toLowerCase()} page.`;
 
