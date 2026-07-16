@@ -10,7 +10,7 @@ export default function RolesPage() {
         <title>All Squad Roles - {squadRoles.length} Friend Group Roles | Squad Audit</title>
         <meta name="description" content={`Browse all ${squadRoles.length} squad roles — from The Planner to The Anchor. Each with responsibilities, strengths, weaknesses, and health metrics.`} />
       </Helmet>
-      <div className="eyebrow" style={{ marginBottom: 8 }}>Squad Roles</div>
+      <h2 className="eyebrow" style={{ marginBottom: 8 }}>Squad Roles</h2>
       <h1 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 4vw, 2.75rem)", fontWeight: 700, marginBottom: 16 }}>All Squad Roles</h1>
       <p style={{ color: "var(--text-soft)", fontSize: 16, lineHeight: 1.7, maxWidth: 640, marginBottom: 40, fontFamily: "var(--font-body)" }}>
         {squadRoles.length} distinct roles that appear in every friend group. Each role has unique responsibilities, strengths, weaknesses, and health metrics. Which one are you?

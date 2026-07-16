@@ -10,7 +10,7 @@ export default function MetricsPage() {
         <title>Squad Health Metrics - 5 Indicators of Group Health | Squad Audit</title>
         <meta name="description" content="The 5 squad health metrics: Reliability, Fun Factor, Drama Level, Loyalty, and Cohesion. Learn what each metric measures and how to improve it." />
       </Helmet>
-      <div className="eyebrow" style={{ marginBottom: 8 }}>Health Metrics</div>
+      <h2 className="eyebrow" style={{ marginBottom: 8 }}>Health Metrics</h2>
       <h1 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 4vw, 2.75rem)", fontWeight: 700, marginBottom: 16 }}>Squad Health Metrics</h1>
       <p style={{ color: "var(--text-soft)", fontSize: 16, lineHeight: 1.7, maxWidth: 640, marginBottom: 40, fontFamily: "var(--font-body)" }}>
         Every friend group can be scored on 5 health metrics. Together, they provide a comprehensive picture of group dynamics. Learn what each metric means, what a healthy score looks like, and how to improve it.
