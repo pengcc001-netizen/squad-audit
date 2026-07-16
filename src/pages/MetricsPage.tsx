@@ -9,7 +9,6 @@ export default function MetricsPage() {
       <Helmet>
         <title>Squad Health Metrics - 5 Indicators of Group Health | Squad Audit</title>
         <meta name="description" content="The 5 squad health metrics: Reliability, Fun Factor, Drama Level, Loyalty, and Cohesion. Learn what each metric measures and how to improve it." />
-        <link rel="canonical" href="https://squad.csskey.com/metrics" />
         <meta property="og:title" content="Squad Health Metrics - 5 Indicators of Group Health | Squad Audit" />
         <meta property="og:description" content="The 5 squad health metrics: Reliability, Fun Factor, Drama Level, Loyalty, and Cohesion. Learn what each metric measures and how to improve it." />
         <meta property="og:url" content="https://squad.csskey.com/metrics" />

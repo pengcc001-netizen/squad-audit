@@ -9,7 +9,6 @@ export default function BlogIndex() {
       <Helmet>
         <title>Squad Dynamics Blog - Friend Group Guides | Squad Audit</title>
         <meta name="description" content={`Learn about friend group dynamics, squad roles, and group health. ${blogPosts.length} articles.`} />
-        <link rel="canonical" href="https://squad.csskey.com/blog" />
         <meta property="og:title" content="Squad Dynamics Blog - Friend Group Guides | Squad Audit" />
         <meta property="og:description" content={`Learn about friend group dynamics, squad roles, and group health. ${blogPosts.length} articles.`} />
         <meta property="og:url" content="https://squad.csskey.com/blog" />
