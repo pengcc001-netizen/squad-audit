@@ -344,5 +344,16 @@ export default function Home() {
     );
   }
 
-  return null;
+  // Defensive fallback — should never be reached
+  return (
+    <div className="fade-in" style={{ minHeight: '60vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 16 }}>
+      <Helmet>
+        <title>Page Not Found - Squad Audit</title>
+        <meta name="robots" content="noindex,nofollow" />
+      </Helmet>
+      <h1 style={{ fontSize: 48, fontWeight: 800 }}>404</h1>
+      <p>Something went wrong. Please try again.</p>
+      <Link to="/" style={{ textDecoration: 'none', fontWeight: 600, color: 'var(--primary)' }}>Go Home</Link>
+    </div>
+  );
 }
