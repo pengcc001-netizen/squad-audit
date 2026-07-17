@@ -53,6 +53,13 @@ export default function ResultPage() {
       <Helmet>
         <title>{role.name} - Shared Squad Audit Report | Squad Audit</title>
         <meta name="robots" content="noindex,nofollow" />
+        <meta property="og:title" content={`My Squad Role is ${role.name}!`} />
+        <meta property="og:description" content={role.tagline} />
+        <meta property="og:url" content={shareUrl} />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={`My Squad Role: ${role.name}`} />
+        <meta name="twitter:description" content={role.tagline} />
       </Helmet>
 
       <div className="audit-card" style={{ padding: "40px 32px", marginBottom: 32 }}>
