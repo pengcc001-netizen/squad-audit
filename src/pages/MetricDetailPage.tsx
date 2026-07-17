@@ -35,8 +35,18 @@ export default function MetricDetailPage() {
             publisher: { "@type": "Organization", name: "Squad Audit" },
             articleSection: "Health Metrics",
             keywords: `${metric.name}, squad health, friend group metric, squad audit`,
+            mainEntityOfPage: url,
           })}
         </script>
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://squad.csskey.com/" },
+            { "@type": "ListItem", position: 2, name: "Metrics", item: "https://squad.csskey.com/metrics" },
+            { "@type": "ListItem", position: 3, name: metric.name, item: url }
+          ]
+        })}</script>
       </Helmet>
 
       <div style={{ marginBottom: 24 }}>

@@ -47,8 +47,18 @@ export default function RoleDetailPage() {
             url,
             author: { "@type": "Person", name: "Marcus Chen" },
             publisher: { "@type": "Organization", name: "Squad Audit" },
+            mainEntityOfPage: url,
           })}
         </script>
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://squad.csskey.com/" },
+            { "@type": "ListItem", position: 2, name: "Roles", item: "https://squad.csskey.com/roles" },
+            { "@type": "ListItem", position: 3, name: role.name, item: url }
+          ]
+        })}</script>
       </Helmet>
 
       <div style={{ marginBottom: 24 }}>
