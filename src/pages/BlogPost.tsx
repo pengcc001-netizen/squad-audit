@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+﻿import { Helmet } from "react-helmet-async";
 import { useParams, Link } from "react-router-dom";
 import { blogPosts } from "../data/blog";
 import ShareButtons from "../components/ShareButtons";
@@ -7,7 +7,7 @@ import Ad from "../components/Ad";
 export default function BlogPost() {
   const { slug } = useParams<{ slug: string }>();
   const post = blogPosts.find((p) => p.slug === slug);
-  if (!post) return <div style={{ minHeight: '60vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 16 }}><Helmet><meta name="robots" content="noindex,nofollow" /></Helmet><h1 style={{ fontSize: 48, fontWeight: 800 }}>404</h1><p>Page not found</p><Link to="/" style={{ textDecoration: 'none', fontWeight: 600 }}>Go Home</Link></div>;
+  if (!post) return <div style={{ minHeight: '60vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 16 }}><Helmet><meta name="robots" content="noindex,nofollow" /><title>404 - Not Found | Squad Audit</title></Helmet><h1 style={{ fontSize: 48, fontWeight: 800 }}>404</h1><p>Page not found</p><Link to="/" style={{ textDecoration: 'none', fontWeight: 600 }}>Go Home</Link></div>;
 
   const url = `https://squad.csskey.com/blog/${post.slug}`;
   const related = blogPosts.filter((p) => p.slug !== post.slug).slice(0, 3);
@@ -41,12 +41,12 @@ export default function BlogPost() {
       </Helmet>
 
       <div style={{ marginBottom: 24 }}>
-        <Link to="/blog" style={{ color: "var(--text-faint)", fontSize: 12, fontFamily: "var(--font-mono)" }}>← All Articles</Link>
+        <Link to="/blog" style={{ color: "var(--text-faint)", fontSize: 12, fontFamily: "var(--font-mono)" }}>鈫?All Articles</Link>
       </div>
 
       <div style={{ display: "flex", gap: 8, marginBottom: 16 }}>
         <span className="chip chip-primary">{post.category}</span>
-        <span style={{ fontSize: 11, color: "var(--text-faint)", letterSpacing: "0.1em", alignSelf: "center", fontFamily: "var(--font-mono)" }}>{post.date} · BY {post.author.toUpperCase()}</span>
+        <span style={{ fontSize: 11, color: "var(--text-faint)", letterSpacing: "0.1em", alignSelf: "center", fontFamily: "var(--font-mono)" }}>{post.date} 路 BY {post.author.toUpperCase()}</span>
       </div>
 
       <h1 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(1.75rem, 4vw, 2.5rem)", fontWeight: 700, lineHeight: 1.2, marginBottom: 16, color: "var(--text)" }}>{post.title}</h1>
@@ -63,7 +63,7 @@ export default function BlogPost() {
           if (line.startsWith("- ")) {
             return (
               <p key={i} style={{ fontSize: 16, lineHeight: 1.8, color: "var(--text)", margin: "4px 0", paddingLeft: 20, position: "relative", fontFamily: "var(--font-body)" }}>
-                <span style={{ position: "absolute", left: 0, color: "var(--primary)" }}>▸</span>
+                <span style={{ position: "absolute", left: 0, color: "var(--primary)" }}>鈻?/span>
                 {line.replace("- ", "")}
               </p>
             );

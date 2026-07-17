@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+﻿import { Helmet } from "react-helmet-async";
 import { useParams, Link } from "react-router-dom";
 import { squadMetrics } from "../data/metrics";
 import ShareButtons from "../components/ShareButtons";
@@ -7,7 +7,7 @@ import Ad from "../components/Ad";
 export default function MetricDetailPage() {
   const { slug } = useParams<{ slug: string }>();
   const metric = squadMetrics.find((m) => m.slug === slug);
-  if (!metric) return <div style={{ minHeight: '60vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 16 }}><Helmet><meta name="robots" content="noindex,nofollow" /></Helmet><h1 style={{ fontSize: 48, fontWeight: 800 }}>404</h1><p>Page not found</p><Link to="/" style={{ textDecoration: 'none', fontWeight: 600 }}>Go Home</Link></div>;
+  if (!metric) return <div style={{ minHeight: '60vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: 16 }}><Helmet><meta name="robots" content="noindex,nofollow" /><title>404 - Not Found | Squad Audit</title></Helmet><h1 style={{ fontSize: 48, fontWeight: 800 }}>404</h1><p>Page not found</p><Link to="/" style={{ textDecoration: 'none', fontWeight: 600 }}>Go Home</Link></div>;
 
   const url = `https://squad.csskey.com/metrics/${metric.slug}`;
   const related = squadMetrics.filter((m) => m.slug !== metric.slug);
@@ -20,7 +20,7 @@ export default function MetricDetailPage() {
       <Helmet>
         <title>{metric.name} - Squad Health Metric Guide | Squad Audit</title>
         <meta name="description" content={`${metric.name}: ${metric.shortDescription}`} />
-        <meta property="og:title" content={`${metric.name} — Squad Health Metric`} />
+        <meta property="og:title" content={`${metric.name} 鈥?Squad Health Metric`} />
         <meta property="og:description" content={metric.shortDescription} />
         <meta property="og:url" content={url} />
         <meta property="og:type" content="article" />
@@ -28,7 +28,7 @@ export default function MetricDetailPage() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: `${metric.name} — Squad Health Metric`,
+            headline: `${metric.name} 鈥?Squad Health Metric`,
             description: metric.shortDescription,
             url,
             author: { "@type": "Person", name: "Marcus Chen" },
@@ -40,7 +40,7 @@ export default function MetricDetailPage() {
       </Helmet>
 
       <div style={{ marginBottom: 24 }}>
-        <Link to="/metrics" style={{ color: "var(--text-faint)", fontSize: 12, fontFamily: "var(--font-mono)" }}>← All Metrics</Link>
+        <Link to="/metrics" style={{ color: "var(--text-faint)", fontSize: 12, fontFamily: "var(--font-mono)" }}>鈫?All Metrics</Link>
       </div>
 
       <div style={{ textAlign: "center", marginBottom: 40 }}>
@@ -98,7 +98,7 @@ export default function MetricDetailPage() {
         <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
           {metric.howToImprove.map((tip, i) => (
             <li key={i} style={{ fontSize: 15, color: "var(--text)", padding: "10px 0", borderBottom: i < metric.howToImprove.length - 1 ? "1px solid var(--border)" : "none", fontFamily: "var(--font-body)", lineHeight: 1.6 }}>
-              <span style={{ color: metric.color, marginRight: 12, fontWeight: 700 }}>▸</span>{tip}
+              <span style={{ color: metric.color, marginRight: 12, fontWeight: 700 }}>鈻?/span>{tip}
             </li>
           ))}
         </ul>
@@ -118,7 +118,7 @@ export default function MetricDetailPage() {
           <h2 className="eyebrow" style={{ marginBottom: 10, color: "var(--danger)" }}>Signs of Problems</h2>
           {metric.signsOfProblems.map((w, i) => (
             <div key={i} style={{ fontSize: 14, color: "var(--text)", padding: "6px 0", fontFamily: "var(--font-body)", lineHeight: 1.55 }}>
-              <span style={{ color: "var(--danger)", marginRight: 8, fontWeight: 700 }}>−</span>{w}
+              <span style={{ color: "var(--danger)", marginRight: 8, fontWeight: 700 }}>鈭?/span>{w}
             </div>
           ))}
         </div>
@@ -144,7 +144,7 @@ export default function MetricDetailPage() {
       )}
 
       <div style={{ marginTop: 32, marginBottom: 40 }}>
-        <ShareButtons url={url} title={`${metric.name} — Squad Health Metric`} />
+        <ShareButtons url={url} title={`${metric.name} 鈥?Squad Health Metric`} />
       </div>
 
       <style>{`
