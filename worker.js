@@ -1,3 +1,4 @@
+// Valid route patterns for squad.csskey.com
 const STATIC_PAGES = new Set(['/', '/roles', '/metrics', '/blog', '/about', '/privacy', '/terms', '/contact']);
 
 function isValidRoute(pathname) {
