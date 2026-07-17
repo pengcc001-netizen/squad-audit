@@ -64,12 +64,14 @@ export function computeAudit(optionIndices: number[]): AuditResult {
 }
 
 export function encodeResult(optionIndices: number[]): string {
-  return btoa(JSON.stringify(optionIndices));
+  return btoa(JSON.stringify(optionIndices)).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
 }
 
 export function decodeResult(code: string): number[] | null {
   try {
-    const parsed = JSON.parse(atob(code));
+    const std = code.replace(/-/g, '+').replace(/_/g, '/');
+    const padded = std + '='.repeat((4 - (std.length % 4)) % 4);
+    const parsed = JSON.parse(atob(padded));
     if (Array.isArray(parsed) && parsed.length === quizQuestions.length) {
       if (parsed.every((n) => Number.isInteger(n) && n >= 0 && n < 4)) {
         return parsed;
