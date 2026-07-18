@@ -1,4 +1,4 @@
-﻿import { Helmet } from "react-helmet-async";
+import { Helmet } from "react-helmet-async";
 import { useParams, Link } from "react-router-dom";
 import { squadRoles } from "../data/squadRoles";
 import ShareButtons from "../components/ShareButtons";
@@ -34,7 +34,7 @@ export default function RoleDetailPage() {
       <Helmet>
         <title>{role.name} - Squad Role Guide | Squad Audit</title>
         <meta name="description" content={`${role.name}: ${role.tagline} Responsibilities, strengths, weaknesses, and health metrics.`} />
-        <meta property="og:title" content={`${role.name} 鈥?Squad Role`} />
+        <meta property="og:title" content={`${role.name} —Squad Role`} />
         <meta property="og:description" content={role.tagline} />
         <meta property="og:url" content={url} />
         <meta property="og:type" content="article" />
@@ -42,7 +42,7 @@ export default function RoleDetailPage() {
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: `${role.name} 鈥?Squad Role`,
+            headline: `${role.name} —Squad Role`,
             description: role.tagline,
             url,
             author: { "@type": "Person", name: "Marcus Chen" },
@@ -62,7 +62,7 @@ export default function RoleDetailPage() {
       </Helmet>
 
       <div style={{ marginBottom: 24 }}>
-        <Link to="/roles" style={{ color: "var(--text-faint)", fontSize: 12, fontFamily: "var(--font-mono)" }}>鈫?All Roles</Link>
+        <Link to="/roles" style={{ color: "var(--text-faint)", fontSize: 12, fontFamily: "var(--font-mono)" }}>→All Roles</Link>
       </div>
 
       <div style={{ textAlign: "center", marginBottom: 40 }}>
@@ -99,7 +99,7 @@ export default function RoleDetailPage() {
         <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
           {role.responsibilities.map((r, i) => (
             <li key={i} style={{ fontSize: 15, color: "var(--text)", padding: "8px 0", borderBottom: i < role.responsibilities.length - 1 ? "1px solid var(--border)" : "none", fontFamily: "var(--font-body)" }}>
-              <span style={{ color: "var(--secondary)", marginRight: 12 }}>鈻?/span>{r}
+              <span style={{ color: "var(--secondary)", marginRight: 12 }}>■/span>{r}
             </li>
           ))}
         </ul>
@@ -119,7 +119,7 @@ export default function RoleDetailPage() {
           <h2 className="eyebrow" style={{ marginBottom: 8, color: "var(--danger)" }}>Weaknesses</h2>
           {role.weaknesses.map((w, i) => (
             <div key={i} style={{ fontSize: 14, color: "var(--text)", padding: "4px 0", fontFamily: "var(--font-body)" }}>
-              <span style={{ color: "var(--danger)", marginRight: 8 }}>鈭?/span>{w}
+              <span style={{ color: "var(--danger)", marginRight: 8 }}>−/span>{w}
             </div>
           ))}
         </div>
@@ -162,7 +162,7 @@ export default function RoleDetailPage() {
       )}
 
       <div style={{ marginTop: 32 }}>
-        <ShareButtons url={url} title={`${role.name} 鈥?${role.tagline}`} />
+        <ShareButtons url={url} title={`${role.name} —${role.tagline}`} />
       </div>
     </div>
   );
