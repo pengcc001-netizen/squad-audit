@@ -123,7 +123,7 @@ export default function StaticPage({ page }: { page: string }) {
 
   const canonicalUrl = `https://squad.csskey.com/${page}`;
   const pageTitle = `${info.title} - Squad Audit`;
-  const pageDescription = `Squad Audit ${info.title.toLowerCase()} page.`;
+  const pageDescription = info.content.substring(0, 155).replace(/\n/g, ' ').replace(/[#*]/g, '').trim();
 
   return (
     <div className="fade-in" style={{ maxWidth: 680, margin: "0 auto" }}>
