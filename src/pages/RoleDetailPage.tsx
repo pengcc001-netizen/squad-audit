@@ -47,6 +47,7 @@ export default function RoleDetailPage() {
             url,
             author: { "@type": "Person", name: "Marcus Chen" },
             publisher: { "@type": "Organization", name: "Squad Audit" },
+            datePublished: "2026-07-01",
             mainEntityOfPage: url,
           })}
         </script>

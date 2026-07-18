@@ -33,6 +33,7 @@ export default function MetricDetailPage() {
             url,
             author: { "@type": "Person", name: "Marcus Chen" },
             publisher: { "@type": "Organization", name: "Squad Audit" },
+            datePublished: "2026-07-01",
             articleSection: "Health Metrics",
             keywords: `${metric.name}, squad health, friend group metric, squad audit`,
             mainEntityOfPage: url,
