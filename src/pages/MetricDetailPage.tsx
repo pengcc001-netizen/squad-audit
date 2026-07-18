@@ -108,7 +108,7 @@ export default function MetricDetailPage() {
         <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
           {metric.howToImprove.map((tip, i) => (
             <li key={i} style={{ fontSize: 15, color: "var(--text)", padding: "10px 0", borderBottom: i < metric.howToImprove.length - 1 ? "1px solid var(--border)" : "none", fontFamily: "var(--font-body)", lineHeight: 1.6 }}>
-              <span style={{ color: metric.color, marginRight: 12, fontWeight: 700 }}>■/span>{tip}
+              <span style={{ color: metric.color, marginRight: 12, fontWeight: 700 }}>■</span>{tip}
             </li>
           ))}
         </ul>
@@ -128,7 +128,7 @@ export default function MetricDetailPage() {
           <h2 className="eyebrow" style={{ marginBottom: 10, color: "var(--danger)" }}>Signs of Problems</h2>
           {metric.signsOfProblems.map((w, i) => (
             <div key={i} style={{ fontSize: 14, color: "var(--text)", padding: "6px 0", fontFamily: "var(--font-body)", lineHeight: 1.55 }}>
-              <span style={{ color: "var(--danger)", marginRight: 8, fontWeight: 700 }}>−/span>{w}
+              <span style={{ color: "var(--danger)", marginRight: 8, fontWeight: 700 }}>−</span>{w}
             </div>
           ))}
         </div>

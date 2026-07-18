@@ -72,7 +72,7 @@ export default function BlogPost() {
           if (line.startsWith("- ")) {
             return (
               <p key={i} style={{ fontSize: 16, lineHeight: 1.8, color: "var(--text)", margin: "4px 0", paddingLeft: 20, position: "relative", fontFamily: "var(--font-body)" }}>
-                <span style={{ position: "absolute", left: 0, color: "var(--primary)" }}>■/span>
+                <span style={{ position: "absolute", left: 0, color: "var(--primary)" }}>■</span>
                 {line.replace("- ", "")}
               </p>
             );

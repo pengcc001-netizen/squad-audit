@@ -99,7 +99,7 @@ export default function RoleDetailPage() {
         <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
           {role.responsibilities.map((r, i) => (
             <li key={i} style={{ fontSize: 15, color: "var(--text)", padding: "8px 0", borderBottom: i < role.responsibilities.length - 1 ? "1px solid var(--border)" : "none", fontFamily: "var(--font-body)" }}>
-              <span style={{ color: "var(--secondary)", marginRight: 12 }}>■/span>{r}
+              <span style={{ color: "var(--secondary)", marginRight: 12 }}>■</span>{r}
             </li>
           ))}
         </ul>
@@ -119,7 +119,7 @@ export default function RoleDetailPage() {
           <h2 className="eyebrow" style={{ marginBottom: 8, color: "var(--danger)" }}>Weaknesses</h2>
           {role.weaknesses.map((w, i) => (
             <div key={i} style={{ fontSize: 14, color: "var(--text)", padding: "4px 0", fontFamily: "var(--font-body)" }}>
-              <span style={{ color: "var(--danger)", marginRight: 8 }}>−/span>{w}
+              <span style={{ color: "var(--danger)", marginRight: 8 }}>−</span>{w}
             </div>
           ))}
         </div>
