@@ -22,7 +22,7 @@ export default function BlogIndex() {
           "url": "https://squad.csskey.com/blog"
         })}</script>
       </Helmet>
-      <h2 className="eyebrow" style={{ marginBottom: 8 }}>Blog</h2>
+      <div className="eyebrow" $$$ >$$$</div>
       <h1 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 4vw, 2.75rem)", fontWeight: 700, marginBottom: 16 }}>Squad Dynamics</h1>
       <p style={{ color: "var(--text-soft)", fontSize: 16, lineHeight: 1.7, maxWidth: 640, marginBottom: 40, fontFamily: "var(--font-body)" }}>
         Deep dives into friend group psychology, squad roles, group health metrics, and how to audit your own friend group.

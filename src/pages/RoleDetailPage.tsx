@@ -73,7 +73,7 @@ export default function RoleDetailPage() {
 
       {/* Audit scores */}
       <div className="audit-card" style={{ padding: "28px 32px", marginBottom: 24 }}>
-        <h2 className="eyebrow" style={{ marginBottom: 16 }}>Health Metrics</h2>
+        <div className="eyebrow" $$$ >$$$</div>
         {METRIC_KEYS.map((key) => (
           <div key={key} style={{ marginBottom: 16 }}>
             <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}>
@@ -89,13 +89,13 @@ export default function RoleDetailPage() {
 
       {/* Description */}
       <div className="audit-card" style={{ padding: "28px 32px", marginBottom: 24 }}>
-        <h2 className="eyebrow" style={{ marginBottom: 12 }}>Role Analysis</h2>
+        <div className="eyebrow" $$$ >$$$</div>
         <p className="dropcap" style={{ fontSize: 16, lineHeight: 1.8, color: "var(--text)", fontFamily: "var(--font-body)", textAlign: "justify" }}>{role.description}</p>
       </div>
 
       {/* Responsibilities */}
       <div className="audit-card" style={{ padding: "28px 32px", marginBottom: 24 }}>
-        <h2 className="eyebrow" style={{ marginBottom: 12 }}>Responsibilities</h2>
+        <div className="eyebrow" $$$ >$$$</div>
         <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
           {role.responsibilities.map((r, i) => (
             <li key={i} style={{ fontSize: 15, color: "var(--text)", padding: "8px 0", borderBottom: i < role.responsibilities.length - 1 ? "1px solid var(--border)" : "none", fontFamily: "var(--font-body)" }}>
@@ -108,7 +108,7 @@ export default function RoleDetailPage() {
       {/* Strengths & Weaknesses */}
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 24 }}>
         <div className="audit-card" style={{ padding: "24px 28px" }}>
-          <h2 className="eyebrow" style={{ marginBottom: 8, color: "var(--success)" }}>Strengths</h2>
+          <div className="eyebrow" $$$ >$$$</div>
           {role.strengths.map((s, i) => (
             <div key={i} style={{ fontSize: 14, color: "var(--text)", padding: "4px 0", fontFamily: "var(--font-body)" }}>
               <span style={{ color: "var(--success)", marginRight: 8 }}>+</span>{s}
@@ -116,7 +116,7 @@ export default function RoleDetailPage() {
           ))}
         </div>
         <div className="audit-card" style={{ padding: "24px 28px" }}>
-          <h2 className="eyebrow" style={{ marginBottom: 8, color: "var(--danger)" }}>Weaknesses</h2>
+          <div className="eyebrow" $$$ >$$$</div>
           {role.weaknesses.map((w, i) => (
             <div key={i} style={{ fontSize: 14, color: "var(--text)", padding: "4px 0", fontFamily: "var(--font-body)" }}>
               <span style={{ color: "var(--danger)", marginRight: 8 }}>−</span>{w}
@@ -130,7 +130,7 @@ export default function RoleDetailPage() {
       {/* Compatible roles */}
       {compatible.length > 0 && (
         <section style={{ marginBottom: 32 }}>
-          <h2 className="eyebrow" style={{ marginBottom: 12 }}>Most Compatible With</h2>
+          <div className="eyebrow" $$$ >$$$</div>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             {compatible.map((c) => (
               <Link key={c.slug} to={`/roles/${c.slug}`} style={{ textDecoration: "none" }}>
@@ -147,7 +147,7 @@ export default function RoleDetailPage() {
       {/* Related roles */}
       {related.length > 0 && (
         <section style={{ marginBottom: 32 }}>
-          <h2 className="eyebrow" style={{ marginBottom: 12 }}>Other Squad Roles</h2>
+          <div className="eyebrow" $$$ >$$$</div>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             {related.map((c) => (
               <Link key={c.slug} to={`/roles/${c.slug}`} style={{ textDecoration: "none" }}>

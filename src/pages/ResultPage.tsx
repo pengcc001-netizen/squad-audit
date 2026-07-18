@@ -76,7 +76,7 @@ export default function ResultPage() {
 
         {/* Audit scores */}
         <div style={{ marginBottom: 24, paddingTop: 24, borderTop: "1px solid var(--border)" }}>
-          <h2 className="eyebrow" style={{ marginBottom: 16 }}>Health Metrics</h2>
+          <div className="eyebrow" $$$ >$$$</div>
           {METRIC_KEYS.map((key) => (
             <div key={key} style={{ marginBottom: 16 }}>
               <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}>
@@ -92,13 +92,13 @@ export default function ResultPage() {
 
         {/* Description */}
         <div style={{ marginBottom: 24, paddingTop: 24, borderTop: "1px solid var(--border)" }}>
-          <h2 className="eyebrow" style={{ marginBottom: 12 }}>Role Analysis</h2>
+          <div className="eyebrow" $$$ >$$$</div>
           <p style={{ fontSize: 15, lineHeight: 1.8, color: "var(--text)", fontFamily: "var(--font-body)", textAlign: "justify" }}>{role.description}</p>
         </div>
 
         {/* Responsibilities */}
         <div style={{ paddingTop: 24, borderTop: "1px solid var(--border)" }}>
-          <h2 className="eyebrow" style={{ marginBottom: 12 }}>Responsibilities</h2>
+          <div className="eyebrow" $$$ >$$$</div>
           <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
             {role.responsibilities.map((r, i) => (
               <li key={i} style={{ fontSize: 14, color: "var(--text)", padding: "4px 0", fontFamily: "var(--font-body)" }}>
@@ -111,7 +111,7 @@ export default function ResultPage() {
         {/* Compatibility */}
         {compatibleRoles.length > 0 && (
           <div style={{ marginTop: 24, paddingTop: 24, borderTop: "1px solid var(--border)" }}>
-            <h2 className="eyebrow" style={{ marginBottom: 12 }}>Compatible Roles</h2>
+            <div className="eyebrow" $$$ >$$$</div>
             <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
               {compatibleRoles.map((c) => (
                 <Link key={c.slug} to={`/roles/${c.slug}`} className="chip chip-primary" style={{ textDecoration: "none" }}>

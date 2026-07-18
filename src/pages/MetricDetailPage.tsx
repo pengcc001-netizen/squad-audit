@@ -57,14 +57,14 @@ export default function MetricDetailPage() {
         <div style={{ width: 72, height: 72, borderRadius: 16, background: `${metric.color}15`, display: "inline-flex", alignItems: "center", justifyContent: "center", fontSize: "2.25rem", marginBottom: 16 }}>
           {metric.icon}
         </div>
-        <h2 className="eyebrow" style={{ marginBottom: 8 }}>Metric {String(index + 1).padStart(2, "0")} of 05</h2>
+        <div className="eyebrow" $$$ >$$$</div>
         <h1 className="gradient-text" style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 5vw, 2.75rem)", fontWeight: 700, marginBottom: 12 }}>{metric.name}</h1>
         <p style={{ fontSize: 16, color: "var(--text-soft)", lineHeight: 1.7, maxWidth: 560, margin: "0 auto", fontFamily: "var(--font-body)" }}>{metric.shortDescription}</p>
       </div>
 
       {/* Description with dropcap */}
       <div className="audit-card" style={{ padding: "28px 32px", marginBottom: 24 }}>
-        <h2 className="eyebrow" style={{ marginBottom: 12 }}>Metric Analysis</h2>
+        <div className="eyebrow" $$$ >$$$</div>
         <article className="prose">
           {metric.fullDescription.split("\n").map((line, i) => {
             if (line.startsWith("## ")) {
@@ -92,7 +92,7 @@ export default function MetricDetailPage() {
 
       {/* Score bar */}
       <div className="audit-card" style={{ padding: "24px 32px", marginBottom: 24 }}>
-        <h2 className="eyebrow" style={{ marginBottom: 12 }}>Score Range</h2>
+        <div className="eyebrow" $$$ >$$$</div>
         <div className="metric-bar" style={{ height: 8 }}>
           <div className="metric-bar-fill" style={{ width: "50%", background: metric.color }} />
         </div>
@@ -104,7 +104,7 @@ export default function MetricDetailPage() {
 
       {/* How to improve */}
       <div className="audit-card" style={{ padding: "28px 32px", marginBottom: 24 }}>
-        <h2 className="eyebrow" style={{ marginBottom: 12, color: metric.color }}>How to Improve</h2>
+        <div className="eyebrow" $$$ >$$$</div>
         <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
           {metric.howToImprove.map((tip, i) => (
             <li key={i} style={{ fontSize: 15, color: "var(--text)", padding: "10px 0", borderBottom: i < metric.howToImprove.length - 1 ? "1px solid var(--border)" : "none", fontFamily: "var(--font-body)", lineHeight: 1.6 }}>
@@ -117,7 +117,7 @@ export default function MetricDetailPage() {
       {/* Signs of health & problems */}
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, marginBottom: 24 }} className="metric-signs-grid">
         <div className="audit-card" style={{ padding: "24px 28px" }}>
-          <h2 className="eyebrow" style={{ marginBottom: 10, color: "var(--success)" }}>Signs of Health</h2>
+          <div className="eyebrow" $$$ >$$$</div>
           {metric.signsOfHealth.map((s, i) => (
             <div key={i} style={{ fontSize: 14, color: "var(--text)", padding: "6px 0", fontFamily: "var(--font-body)", lineHeight: 1.55 }}>
               <span style={{ color: "var(--success)", marginRight: 8, fontWeight: 700 }}>+</span>{s}
@@ -125,7 +125,7 @@ export default function MetricDetailPage() {
           ))}
         </div>
         <div className="audit-card" style={{ padding: "24px 28px" }}>
-          <h2 className="eyebrow" style={{ marginBottom: 10, color: "var(--danger)" }}>Signs of Problems</h2>
+          <div className="eyebrow" $$$ >$$$</div>
           {metric.signsOfProblems.map((w, i) => (
             <div key={i} style={{ fontSize: 14, color: "var(--text)", padding: "6px 0", fontFamily: "var(--font-body)", lineHeight: 1.55 }}>
               <span style={{ color: "var(--danger)", marginRight: 8, fontWeight: 700 }}>−</span>{w}
@@ -139,7 +139,7 @@ export default function MetricDetailPage() {
       {/* Related metrics */}
       {related.length > 0 && (
         <section style={{ marginBottom: 32 }}>
-          <h2 className="eyebrow" style={{ marginBottom: 12 }}>Other Squad Metrics</h2>
+          <div className="eyebrow" $$$ >$$$</div>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             {related.map((m) => (
               <Link key={m.slug} to={`/metrics/${m.slug}`} style={{ textDecoration: "none" }}>

@@ -78,7 +78,7 @@ export default function Home() {
 
         {/* Hero */}
         <section style={{ textAlign: "center", padding: "40px 0 60px" }}>
-          <h2 className="eyebrow" style={{ marginBottom: 16 }}>Squad Audit Report · 2026</h2>
+          <div className="eyebrow" $$$ >$$$</div>
           <h1 className="gradient-text" style={{ fontSize: "clamp(3rem, 8vw, 5.5rem)", fontWeight: 700, fontFamily: "var(--font-heading)", letterSpacing: "-0.03em", lineHeight: 1, marginBottom: 24 }}>
             Audit Your Squad
           </h1>
@@ -112,7 +112,7 @@ export default function Home() {
 
         {/* How it works */}
         <section style={{ marginBottom: 60 }}>
-          <h2 className="eyebrow" style={{ textAlign: "center", marginBottom: 8 }}>How It Works</h2>
+          <div className="eyebrow" $$$ >$$$</div>
           <h2 style={{ textAlign: "center", fontSize: "clamp(1.5rem, 3vw, 2rem)", fontFamily: "var(--font-heading)", marginBottom: 40 }}>Three Steps to Your Audit Report</h2>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 24 }}>
             {[
@@ -133,7 +133,7 @@ export default function Home() {
         <section>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: 24, flexWrap: "wrap", gap: 12 }}>
             <div>
-              <h2 className="eyebrow" style={{ marginBottom: 4 }}>Featured</h2>
+              <div className="eyebrow" $$$ >$$$</div>
               <h2 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(1.5rem, 3vw, 2rem)" }}>The Squad Roles</h2>
             </div>
             <Link to="/roles" style={{ color: "var(--primary)", fontSize: 14, fontFamily: "var(--font-mono)", fontWeight: 600 }}>View All →</Link>
@@ -253,7 +253,7 @@ export default function Home() {
 
           {/* Audit scores */}
           <div style={{ marginBottom: 24, paddingTop: 24, borderTop: "1px solid var(--border)" }}>
-            <h2 className="eyebrow" style={{ marginBottom: 16 }}>Health Metrics</h2>
+            <div className="eyebrow" $$$ >$$$</div>
             {METRIC_KEYS.map((key) => (
               <div key={key} style={{ marginBottom: 16 }}>
                 <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 6 }}>
@@ -269,13 +269,13 @@ export default function Home() {
 
           {/* Description */}
           <div style={{ marginBottom: 24, paddingTop: 24, borderTop: "1px solid var(--border)" }}>
-            <h2 className="eyebrow" style={{ marginBottom: 12 }}>Role Analysis</h2>
+            <div className="eyebrow" $$$ >$$$</div>
             <p style={{ fontSize: 15, lineHeight: 1.8, color: "var(--text)", fontFamily: "var(--font-body)", textAlign: "justify" }}>{role.description}</p>
           </div>
 
           {/* Responsibilities */}
           <div style={{ marginBottom: 24, paddingTop: 24, borderTop: "1px solid var(--border)" }}>
-            <h2 className="eyebrow" style={{ marginBottom: 12 }}>Responsibilities</h2>
+            <div className="eyebrow" $$$ >$$$</div>
             <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
               {role.responsibilities.map((r, i) => (
                 <li key={i} style={{ fontSize: 14, color: "var(--text)", padding: "4px 0", fontFamily: "var(--font-body)" }}>
@@ -289,7 +289,7 @@ export default function Home() {
           {/* Strengths & Weaknesses */}
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16, paddingTop: 24, borderTop: "1px solid var(--border)" }}>
             <div>
-              <h2 className="eyebrow" style={{ marginBottom: 8, color: "var(--success)" }}>Strengths</h2>
+              <div className="eyebrow" $$$ >$$$</div>
               {role.strengths.map((s, i) => (
                 <div key={i} style={{ fontSize: 13, color: "var(--text)", padding: "2px 0", fontFamily: "var(--font-body)" }}>
                   <span style={{ color: "var(--success)", marginRight: 6 }}>+</span>{s}
@@ -297,7 +297,7 @@ export default function Home() {
               ))}
             </div>
             <div>
-              <h2 className="eyebrow" style={{ marginBottom: 8, color: "var(--danger)" }}>Weaknesses</h2>
+              <div className="eyebrow" $$$ >$$$</div>
               {role.weaknesses.map((w, i) => (
                 <div key={i} style={{ fontSize: 13, color: "var(--text)", padding: "2px 0", fontFamily: "var(--font-body)" }}>
                   <span style={{ color: "var(--danger)", marginRight: 6 }}>−</span>{w}
@@ -309,7 +309,7 @@ export default function Home() {
           {/* Compatibility */}
           {compatibleRoles.length > 0 && (
             <div style={{ marginTop: 24, paddingTop: 24, borderTop: "1px solid var(--border)" }}>
-              <h2 className="eyebrow" style={{ marginBottom: 12 }}>Compatible Roles</h2>
+              <div className="eyebrow" $$$ >$$$</div>
               <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
                 {compatibleRoles.map((c) => (
                   <Link key={c.slug} to={`/roles/${c.slug}`} className="chip chip-primary" style={{ textDecoration: "none" }}>

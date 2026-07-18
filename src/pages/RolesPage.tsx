@@ -22,7 +22,7 @@ export default function RolesPage() {
           "url": "https://squad.csskey.com/roles"
         })}</script>
       </Helmet>
-      <h2 className="eyebrow" style={{ marginBottom: 8 }}>Squad Roles</h2>
+      <div className="eyebrow" $$$ >$$$</div>
       <h1 style={{ fontFamily: "var(--font-heading)", fontSize: "clamp(2rem, 4vw, 2.75rem)", fontWeight: 700, marginBottom: 16 }}>All Squad Roles</h1>
       <p style={{ color: "var(--text-soft)", fontSize: 16, lineHeight: 1.7, maxWidth: 640, marginBottom: 40, fontFamily: "var(--font-body)" }}>
         {squadRoles.length} distinct roles that appear in every friend group. Each role has unique responsibilities, strengths, weaknesses, and health metrics. Which one are you?
