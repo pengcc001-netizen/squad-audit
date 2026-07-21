@@ -1,0 +1,27 @@
+# Squad Audit
+
+> Team and squad analysis tools for group dynamics, collaboration, and compatibility.
+
+## Main Pages
+- [Home](https://squad.csskey.com/)
+- [About](https://squad.csskey.com/about)
+- [Privacy Policy](https://squad.csskey.com/privacy)
+- [Terms of Service](https://squad.csskey.com/terms)
+- [Contact](https://squad.csskey.com/contact)
+
+## Features
+- Team analysis
+- Group dynamics
+- Compatibility check
+- Squad builder
+- Role assignment
+
+## Topics
+- team building
+- squad analysis
+- group dynamics
+- collaboration
+- team roles
+
+## Sitemap
+https://squad.csskey.com/sitemap.xml
